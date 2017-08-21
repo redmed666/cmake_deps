@@ -1,0 +1,1 @@
+CMake external_project dependencies crafted with love and pain.
