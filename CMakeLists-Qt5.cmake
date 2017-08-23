@@ -22,16 +22,8 @@ else()
     )
 endif()
 
-#add_library(libQt5Core STATIC IMPORTED)
-#set_property(TARGET libQt5Core PROPERTY IMPORTED_LOCATION ${QT}/lib/libQt5Core.a)
-#add_dependencies(libQt5Core QT_project)
-#list(APPEND ExternalSharedLibraries ${QT}/lib/libQt5Core.a)
-#list(APPEND RPATH_IMPORTED "${QT};")
-
 set(CMAKE_PREFIX_PATH "${QT}/lib/cmake")
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5QML REQUIRED)
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Quick REQUIRED)
-
-#include_directories(${QT}/include)
